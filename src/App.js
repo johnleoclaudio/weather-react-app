@@ -4,7 +4,6 @@ import Titles from './components/Titles';
 import Form from './components/Form';
 import Weather from './components/Weather'
 
-const API_KEY = "d038f343a4e0703f7fecc33b0c1b1fa2";
 
 class App extends Component {
   state = {
@@ -21,7 +20,7 @@ class App extends Component {
     e.preventDefault();
     const city = e.target.elements.city.value;
     const country = e.target.elements.country.value;
-    const api_call = await fetch(` https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=metric`);
+    const api_call = await fetch(` https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${process.env.REACT_APP_API_KEY}&units=metric`);
     const data = await api_call.json();
     
     if(city && country) {

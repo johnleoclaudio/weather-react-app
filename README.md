@@ -1,6 +1,6 @@
 # Weather Finder React app
 Simple weather finder app made with OpenWeather API and React :heart:
-[Here's the what it looks like](https://johnleoclaudio.github.io/weather-react-app)
+[Check it out!](https://johnleoclaudio.github.io/weather-react-app)
 
 ## Getting Started
 
